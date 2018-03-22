@@ -1,0 +1,11 @@
+CREATE TABLE branch (Bran_Id NUMBER(3) PRIMARY KEY,Bran_Name CHAR(30) NOT NULL,Bran_Head VARCHAR2(25),Bran_Total_Emp NUMBER(25)NOT NULL,Bran_Contact VARCHAR2(25),Bran_Phone_No VARCHAR2(25)UNIQUE,Divn_Id NUMBER REFERENCES division(Divn_Id));
+
+INSERT	INTO branch VALUES	(110, 'Nasik',  NULL, 5, NULL,'91-22-86701816', 11);
+
+INSERT	INTO branch VALUES	(111, 'PUNE', NULL, 3, '',        '91-20-23533723', 11);
+
+INSERT	INTO branch VALUES	(112, 'Kalyan', NULL, 3,'',         '91-25-28763055',11);
+
+INSERT	INTO branch VALUES	(113, 'Thane',  NULL, 5,'',         '91-22-56363049',11);
+
+INSERT	INTO branch VALUES	(114, 'Solapur',NULL, 2,'',         '91-21-72401253',11);
